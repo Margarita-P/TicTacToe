@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.taskuLenta {
+    font-family: Georgia;
+    margin-top: 10%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    color: black;
+}
+.zaidejasXvardas, .zaidejasOvardas,
+.taskaiX, .taskaiO {
+    padding: 10px;
+    text-align: center;
+}
+.zaidejasXvardas, .zaidejasOvardas {
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid grey;
+}
+.taskaiX, .taskaiO {
+    font-size: 25px;
+}
+.zaidejasXvardas {
+    color: red;
+}
+.zaidejasOvardas {
+    color: blue;
+}
+
+.display {
+    font-family: Georgia;
+    margin-top:1em;
+    margin-bottom:1em;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+}
+.display1 {
+    font-family: Georgia;
+    margin-top:1em;
+    margin-bottom:1em;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.paslepti {
+    display: none;
+}
+
+
+.lenta {
+    font-family: Lucida Handwriting;
+    display: grid;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 300px;
+    grid-template-columns: repeat(3,auto);
+}
+.langelis {
+    border: 3px solid grey;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    cursor: pointer;
+}
+.langelis:first-child,
+.langelis:nth-child(2),
+.langelis:nth-child(3) {
+    border-top: none;
+}
+.langelis:nth-child(3n + 1) {
+    border-left: none;
+}
+.langelis:nth-child(3n + 3) {
+    border-right: none;
+}
+.langelis:last-child,
+.langelis:nth-child(8),
+.langelis:nth-child(7) {
+    border-bottom: none;
+}
+
+
+.playerX {
+    color: red;
+}
+.playerO {
+    color: blue;
+}
+
+.mygtukas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+#valyti {
+    margin-top: 1em;
+    font-family: Georgia;
+    background-color: #6495ED;
+    color: black;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    
+}
+#valyti:hover {
+    background-color: white;
+    border: 2px solid #6495ED
+}
